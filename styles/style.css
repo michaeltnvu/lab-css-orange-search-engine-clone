@@ -1,0 +1,157 @@
+/* Importing font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+
+/* Global Styling */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Content */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 10px;
+  color: #031d5b;
+  background-color: #f8f8f8;
+  width: 99vw;
+}
+
+/* Header */
+header {
+  width: 72vw;
+  margin: 25px 50px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  padding: 25px 0;
+}
+
+h1 {
+  color: #f8765e;
+  font-size: 20pt;
+  font-weight: 800;
+  align-self: flex-end;
+  padding-left: 5px;
+}
+
+.nav-bar ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5em;
+}
+
+.orange-phone {
+  width: 325px;
+  height: 100%;
+  margin-left: 40px;
+}
+
+.form {
+  width: 90vw;
+}
+
+.search-input {
+  display: flex;
+  border: 1px solid #f8765e;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 25px 0 12.5px 0;
+}
+
+.text-input {
+  flex-grow: 2;
+  border: none;
+  background-color: #f8f8f8;
+}
+
+.search-input input:focus {
+  outline: none;
+}
+
+.search-input:focus-within {
+  outline: 1px solid blue;
+}
+
+.search-button {
+  border: none;
+}
+
+.main-body {
+  width: 80vw;
+  text-align: center;
+  margin: 12.5px auto;
+}
+
+.body-h2,
+.body-ul {
+  margin-bottom: 25px;
+}
+
+.body-p {
+  width: 90%;
+  font-size: 1.7em;
+  margin: 0 auto 25px auto;
+}
+
+.body-ul {
+  width: 50%;
+  text-align: left;
+  margin: 0 auto;
+  line-height: 1.5em;
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: 900;
+}
+
+.download-btn {
+  margin: 12.5px 0;
+  padding: 20px 25px;
+  border-style: none;
+  border-radius: 20px;
+  color: white;
+  background-color: #031d5b;
+  letter-spacing: 2px;
+  box-shadow: 0px 4px 4px gray;
+}
+
+.rating {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+footer {
+  color: #b6bbc9;
+  font-size: 1.3em;
+  font-weight: 700;
+  margin: 25px 0;
+}
+
+/* Removing List Styles */
+li {
+  list-style-type: none;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) and (max-width: 1440px) {
+  header {
+    width: 35vw;
+  }
+
+  .main-body {
+    width: 86%;
+  }
+
+  .body-ul {
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}

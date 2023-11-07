@@ -1,33 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
     <title>Orange Search Engine Clone</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <section class="logo">
+        <img src="./images/orange-logo.svg" alt="Orange Logo" />
+        <h1>ORANGE</h1>
+      </section>
+      <nav class="nav-bar">
+        <ul>
+          <li>Benefit</li>
+          <li>Pricing</li>
+          <li>Testimonials</li>
+        </ul>
+      </nav>
+    </header>
 
-Orange
+    <img
+      class="orange-phone"
+      src="./images/orange-search-engine-phone.png"
+      alt="Orange Search Engine Phone"
+    />
 
-Search the web
+    <main>
+      <form class="form">
+        <div class="search-input">
+          <input class="text-input" type="text" placeholder="Search the web" />
+          <input
+            type="image"
+            src="./images/search-icon.svg"
+            alt="Search button"
+          />
+        </div>
+      </form>
 
-Benefit
-Pricing
-Testimonials
-			
-Tired of your data being squeezed? Here to help!
-			
-Get the online privacy protection you deserve for free with one download in the App Store:
-			
-Private Search
-Tracker Blocking
-Site Encryption
+      <section class="main-body">
+        <h2 class="body-h2">
+          Tired of your data being squeezed? Here to help!
+        </h2>
 
-Download now
+        <p class="body-p">
+          Get the online privacy protection you deserve for free with one
+          download in the App Store:
+        </p>
 
-Rate 4/5
+        <ul class="body-ul">
+          <li>
+            <img src="./images/check-icon.svg" alt="Check Icon" />
+            Private Search
+          </li>
+          <li>
+            <img src="./images/check-icon.svg" alt="Check Icon" />
+            Tracker Blocking
+          </li>
+          <li>
+            <img src="./images/check-icon.svg" alt="Check Icon" />
+            Site Encryption
+          </li>
+        </ul>
 
-Privacy for everyone
-    
-</body>
+        <button class="download-btn">Download now</button>
+
+        <section class="rating">
+          <img src="./images/star-blue-icon.svg" alt="blue-star" />
+          <img src="./images/star-blue-icon.svg" alt="blue-star" />
+          <img src="./images/star-blue-icon.svg" alt="blue-star" />
+          <img src="./images/star-blue-icon.svg" alt="blue-star" />
+          <img src="./images/star-grey-icon.svg" alt="grey-star" />
+          <span>Rated 4/5</span>
+        </section>
+      </section>
+    </main>
+
+    <footer>Privacy for everyone</footer>
+  </body>
 </html>
