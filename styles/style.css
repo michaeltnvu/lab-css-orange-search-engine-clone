@@ -7,7 +7,7 @@
   padding: 0;
 }
 
-/* Main Content */
+/* Main Content - Mobile First */
 body {
   display: flex;
   flex-direction: column;
@@ -140,6 +140,7 @@ li {
   font-weight: 700;
 }
 
+/* iPad */
 @media (min-width: 768px) and (max-width: 1440px) {
   header {
     width: 35vw;
@@ -153,5 +154,101 @@ li {
     width: auto;
     display: flex;
     justify-content: space-between;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .orange-phone {
+    margin: 0;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1440px) {
+  body {
+    height: 100vh;
+    width: 83%;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+    width: 100%;
+  }
+
+  .navbar-item {
+    padding-left: 30px;
+  }
+
+  main {
+    width: 50%;
+  }
+
+  .main-content {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .form {
+    width: 97%;
+  }
+
+  .search-input {
+    margin: 0;
+  }
+
+  .main-body {
+    width: 100%;
+    text-align: left;
+  }
+
+  .main-body > * {
+    margin: 0;
+  }
+
+  .main-body > h2 {
+    font-size: 5em;
+    margin-top: 15px;
+  }
+
+  .main-body > p {
+    font-size: 2.5em;
+    margin: 15px 0;
+  }
+
+  .body-ul {
+    width: auto;
+    display: flex;
+    font-size: 2em;
+    margin-bottom: 50px;
+  }
+
+  .body-ul > li {
+    text-wrap: nowrap;
+    padding-right: 50px;
+  }
+
+  .button-rating {
+    display: flex;
+    align-items: center;
+  }
+
+  .download-btn {
+    margin-right: 20px;
+  }
+
+  .orange-phone {
+    width: 50%;
+    margin: 0;
   }
 }
